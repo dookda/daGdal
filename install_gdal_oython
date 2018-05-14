@@ -1,0 +1,22 @@
+GDAL Installation
+Go to:
+
+http://www.gisinternals.com/query.html?content=filelist&file=release-1500-gdal-2-2-3-mapserver-7-0-7.zip
+
+Download these 2 files
+1- gdal-20x-1500-core.msi
+2- GDAL-2.x.x.win32-py2.7.msi
+
+Install both files.
+Specify the path in Environment Variables. 
+
+TESTING.
+Successfully Installed.
+
+
+In case you get error delete or cut file [ogr_MSSQLSpatial.dll]  
+from 
+
+C:\Program Files (x86)\GDAL\gdalplugins 
+
+cr: https://www.youtube.com/watch?v=Xy6GZXky9dM
