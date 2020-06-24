@@ -1,0 +1,23 @@
+@ECHO OFF
+SETLOCAL EnableDelayedExpansion
+
+SET input=C:\Workspace\udortho2\
+SET output=C:\Workspace\udortho2\output\
+
+FOR /F %%f IN ('DIR /B %mypath%*.sid') DO (
+
+    SET infile=%%~nf.sid
+    SET outfile=%%~nf.tif
+
+    ECHO %input%!infile!
+    
+    ECHO %output%!outfile!
+
+    gdal_translate -of GTiff %input%!infile! %output%!outfile!
+
+    REM gdal_translate -of GTiff C:\Workspace\udortho2\504430836.sid C:\Workspace\udortho2\output\504430836.tif
+
+)
+
+
+gdal_translate -of GTiff C:/Workspace/udortho2/504430836.sid C:/Workspace/udortho2/OUTPUT.tif
